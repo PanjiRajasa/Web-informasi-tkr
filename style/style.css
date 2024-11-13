@@ -86,7 +86,7 @@ nav ul li a.active {
 }
 
 .button-nav {
-  background-color: #C6DCFF;
+  background-color: #7bacfa;
   font-weight: 500;
   color: #ffffff;
   padding: 7px 13px;
@@ -320,8 +320,7 @@ section {
 .career-section {
   text-align: center;
   padding: 20px;
-  /* background: #4285f4; */
-  background-color: lightgray;
+  background-color: #DCEED1;
 }
 
 .career-section h2 {
@@ -407,9 +406,9 @@ section {
 .row {
   display: flex;
   flex-wrap: wrap;
-  background-color: #d9e8ff;
-  padding: 8px;
-  margin: 8px 0px;
+  background-color: #AAC0AA;
+  padding: 12px;
+  margin: 16px 0px;
 }
 
 /* Create four equal columns that sits next to each other */
