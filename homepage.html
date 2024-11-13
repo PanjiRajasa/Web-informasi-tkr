@@ -32,7 +32,11 @@
         <li><a class="active" href="homepage.html">Beranda</a></li>
         <li><a href="guru.html">Guru</a></li>
         <li><a href="kelas.html">Kelas</a></li>
-        <li><a href="index.html" class="button-nav">Logout</a></li>
+        <li>
+          <a href="index.html" class="button-nav" onclick="logoutUser()"
+            >Logout</a
+          >
+        </li>
       </ul>
     </nav>
 
@@ -144,30 +148,55 @@
 
       <div class="column">
         <img src="image/image_grid/orang_sigma_male.jpg" style="width: 100%" />
-        <img src="image/image_grid/penyimpanan_barang1.jpg" style="width: 100%" />
+        <img
+          src="image/image_grid/penyimpanan_barang1.jpg"
+          style="width: 100%"
+        />
         <img src="image/image_grid/sample_mesin.jpg" style="width: 100%" />
         <img src="image/image_grid/simulasi_listrik.jpg" style="width: 100%" />
         <img src="image/image_grid/simulasi_listrik2.jpg" style="width: 100%" />
-        <img src="image/image_grid/siswa_tkr_berkumpul1.jpg" style="width: 100%" />
+        <img
+          src="image/image_grid/siswa_tkr_berkumpul1.jpg"
+          style="width: 100%"
+        />
       </div>
 
       <div class="column">
-        <img src="image/image_grid/siswa_tkr_berkumpul2.jpg" style="width: 100%" />
+        <img
+          src="image/image_grid/siswa_tkr_berkumpul2.jpg"
+          style="width: 100%"
+        />
         <img src="image/image_grid/tempat_cucimobil.jpg" style="width: 100%" />
-        <img src="image/image_grid/tempat_express_maintenance.jpg" style="width: 100%" />
-        <img src="image/image_grid/tempat_maintenance1.jpg" style="width: 100%" />
-        <img src="image/image_grid/tempat_maintenance2.jpg" style="width: 100%" />
-        <img src="image/image_grid/tempat_stall_spooring.jpg" style="width: 100%" />
+        <img
+          src="image/image_grid/tempat_express_maintenance.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="image/image_grid/tempat_maintenance1.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="image/image_grid/tempat_maintenance2.jpg"
+          style="width: 100%"
+        />
+        <img
+          src="image/image_grid/tempat_stall_spooring.jpg"
+          style="width: 100%"
+        />
         <img src="image/image_grid/atas_gedung.jpg" style="width: 100%" />
       </div>
 
       <div class="column">
-        <img src="image/image_tkr/foto_patung_ganesha1.jpg" style="width: 100%" />
+        <img
+          src="image/image_tkr/foto_patung_ganesha1.jpg"
+          style="width: 100%"
+        />
         <img src="image/image_tkr/orang_kerja2.jpg" style="width: 100%" />
         <img src="image/image_tkr/orang_kerja3.jpg" style="width: 100%" />
         <img src="image/apa_yang_akan_dipelajari1.jpg" style="width: 100%" />
         <img src="image/apa_yang_akan_dipelajari2.jpg" style="width: 100%" />
         <img src="image/apa_yang_akan_dipelajari3.jpg" style="width: 100%" />
+        <img src="image/tkr_intro2.jpg" style="width: 100%" />
       </div>
     </div>
 
@@ -175,9 +204,9 @@
       <div class="footer-content">
         <div class="footer-section">
           <h4>Create By</h4>
-          <p>Panji</p>
-          <p>Jojo</p>
-          <p>Rangga</p>
+          <p>I Gusti Panji Rajasa</p>
+          <p>Jonathan Lionel</p>
+          <p>I Putu Rangga Aditya Nandhana</p>
         </div>
         <div class="footer-section">
           <h4>About Us</h4>
@@ -193,5 +222,24 @@
         <p>&copy; 2024 Your Company. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Tidak tau kenapa error pakai yang dibawah -->
+    <!-- <script src="script/script.js"></script> -->
+
+    <!-- Cara dibawah yang berhasil -->
+    <script>
+      // Cek status login saat halaman dimuat
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        // Jika belum login, redirect ke halaman login
+        window.location.href = "index.html";
+      }
+
+      function logoutUser() {
+        // Hapus status login dari localStorage
+        localStorage.removeItem("isLoggedIn");
+        // Redirect ke halaman login
+        window.location.href = "index.html";
+      }
+    </script>
   </body>
 </html>

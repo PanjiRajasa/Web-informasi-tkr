@@ -1,0 +1,147 @@
+/* Resetting margin and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    font-size: 1rem;
+    background-image: url(/image/image_tkr/orang_kerja2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Centers the image */
+}
+
+form {
+    border: 0.2rem solid #f1f1f1;
+    border-radius: 12px;
+    max-width: 35rem;
+    /* Memperlebar lagi form */
+    width: 100%;
+    padding: 2rem;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 0.1rem solid #ccc;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    padding: 0.9rem;
+    margin: 0.5rem 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 1rem 0;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.psw a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.psw a:hover {
+    text-decoration: underline;
+    color: #4285f4;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.register-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    color: #4285f4;
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo>img {
+    width: 10rem;
+    /* Adjust logo size */
+    margin-bottom: 2rem;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 500px) {
+    body {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 1rem;
+        border-width: 0.1rem;
+    }
+
+    button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .psw a {
+        font-size: 0.9rem;
+    }
+}
