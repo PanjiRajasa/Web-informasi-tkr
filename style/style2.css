@@ -1,110 +1,200 @@
-/* Centered title styling */
+/* Title Styling */
 .title {
-    text-align: center;
-    font-size: 2.5rem; /* Default size for large screens */
-    font-weight: bold;
-    color: #333;
-    margin: 1.5rem 0;
-  }
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a73e8;
+  margin: 1.5rem 0;
+}
 
-  /* Responsive title adjustments */
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2rem; /* Medium size for tablets and small laptops */
-    }
+/* Responsive title adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
+}
 
-  @media (max-width: 500px) {
-    .title {
-      font-size: 1.5rem; /* Smaller size for mobile screens */
-    }
-  }
-  
-/* title guru end */
-
-/* Main grid container for profiles */
-.profile-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 2rem auto;
-    max-width: 1200px;
-    padding: 1rem;
-  }
-
-  /* Profile card styling */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 400px;
-    flex: 1 1 30%; /* Set each card to take approximately 30% of the row */
-    min-width: 280px; /* Minimum width to prevent shrinking too much on small screens */
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    position: relative;
-  }
-
-  /* Number in the top-left corner */
-  .number {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
+@media (max-width: 500px) {
+  .title {
     font-size: 1.5rem;
-    color: #555;
   }
+}
 
-  /* Flex row for image and name */
-  .info-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 1.5rem;
+/* Profile Grid Container */
+.profile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+/* Profile Card Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  min-width: 280px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #ffffffdc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Number in the Top-Left Corner */
+.number {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.5rem;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+/* Flex Row for Image and Details */
+.info-row {
+  display: flex;
+  flex-direction: column;
+  /* Stack image and details vertically */
+  align-items: center;
+  /* Center image and details */
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Teacher Details */
+.teacher-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Teacher Name Styling */
+.teacher-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 0.2rem;
+}
+
+/* Subject Text Styling */
+.subject {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* Teacher Image */
+.teacher-img {
+  width: 120px;
+  /* Size of the image */
+  height: 120px;
+  border-radius: 50%;
+  /* Circular crop */
+  object-fit: cover;
+  margin-bottom: 1rem;
+  /* Add space below image */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex: 1 1 100%;
+    max-width: 90%;
   }
+}
 
-  /* Column for teacher details */
-  .teacher-details {
-    display: flex;
+/* footer design */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* Tambahkan gap untuk jarak antar kolom */
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 200px;
+  /* Menetapkan lebar minimum untuk menjaga tata letak */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  /* Font responsive */
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.875rem;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
     flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+    /* Untuk rata tengah pada layar kecil */
   }
 
-  /* Teacher name styling */
-  .teacher-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 0.2rem;
+  .footer-section {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
   }
 
-  /* Subject text styling */
-  .subject {
+  .footer-section h4 {
     font-size: 1rem;
-    color: #666;
   }
 
-  /* Teacher image */
-  .teacher-img {
-    width: 50%;
-    max-width: 100px;
-    height: auto;
-    border-radius: 8px;
+  .footer-section p,
+  .footer-section a,
+  .footer-bottom {
+    font-size: 0.875rem;
   }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .container {
-      flex: 1 1 100%; /* Stack cards vertically on smaller screens */
-      max-width: 90%;
-    }
-  }
-
-/* card guru end */
+}

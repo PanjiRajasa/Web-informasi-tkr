@@ -17,6 +17,10 @@
 
   <body>
     <nav>
+      <a href="homepage.html" style="list-style: none; color: black">
+        <img src="image/logo/logo_skensa.png" alt="Logo Skensa" />
+      </a>
+
       <!-- Checkbox for toggling menu -->
       <input type="checkbox" id="check" />
 
@@ -26,16 +30,20 @@
       </label>
 
       <!-- Site logo -->
-      <a href="homepage.html">
+      <!-- <a href="homepage.html">
         <label class="logo">TKR</label>
-      </a>
+      </a> -->
 
       <!-- Navigation links -->
       <ul>
-        <li><a href="homepage.html">Beranda</a></li>
+        <li><a  href="homepage.html">Beranda</a></li>
         <li><a href="guru.html">Guru</a></li>
-        <li><a href="kelas.html" class="active">Kelas</a></li>
-        <li><a href="index.html" class="button-nav">Logout</a></li>
+        <li><a class="active" href="kelas.html">Kelas</a></li>
+        <li>
+          <a href="index.html" class="button-nav" onclick="logoutUser()"
+            >Logout</a
+          >
+        </li>
       </ul>
     </nav>
 

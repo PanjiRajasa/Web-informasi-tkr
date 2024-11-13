@@ -15,37 +15,46 @@ body {
 }
 
 nav {
-  /* background: #4285f4; */
   background-color: #022cff;
-  height: 80px;
+  height: 90px;
   width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
   position: sticky;
-  /* Membuat navbar sticky */
   top: 0;
-  /* Menempel di bagian atas halaman */
   z-index: 1000;
-  /* Agar navbar tetap di atas konten lainnya */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
 }
 
+/* Gaya untuk logo */
+nav img {
+  height: 90px; /* Sesuaikan tinggi dengan navbar */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Logo teks opsional */
 label.logo {
   color: white;
   font-size: 25px;
-  line-height: 80px;
-  padding: 0 16px;
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
+/* Gaya untuk daftar navigasi */
 nav ul {
-  float: right;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
+  list-style: none;
 }
 
 nav ul li a {
@@ -55,26 +64,21 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
   transition: background 0.5s ease;
-  /* Add smooth transition */
+  text-decoration: none;
+  margin-right: 8px;
 }
 
 nav ul li a:hover,
-/* Combine hover and active styling */
 nav ul li a.active {
   background: #7bacfa;
-  transition: background 0.5s ease;
 }
 
 .checkbtn {
   font-size: 22px;
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 30px;
   cursor: pointer;
   display: none;
   z-index: 20;
-  /* Tambahkan z-index tinggi */
 }
 
 #check {
@@ -89,14 +93,15 @@ nav ul li a.active {
   border-radius: 3px;
 }
 
-/* Responsive media query for small screen */
+/* Responsif untuk layar kecil */
 @media (max-width: 900px) {
   .checkbtn {
     display: block;
   }
 
-  label.logo {
-    font-size: 22px;
+  /* Logo lebih kecil di layar kecil */
+  nav img {
+    height: 90px;
   }
 
   ul {
@@ -107,9 +112,9 @@ nav ul li a.active {
     top: 80px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 10;
-    /* Tambahkan z-index untuk memastikan menu di atas hero */
+    flex-direction: column;
   }
 
   nav ul li {
@@ -122,14 +127,14 @@ nav ul li a.active {
     font-size: 20px;
   }
 
-  a:hover,
-  a.active {
+  nav ul li a:hover,
+  nav ul li a.active {
     background: #7bacfa;
-    /* Same as default hover effect */
     color: white;
   }
 
-  #check:checked~ul {
+  /* Menu toggle */
+  #check:checked ~ ul {
     left: 0;
   }
 }
