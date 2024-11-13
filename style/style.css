@@ -15,7 +15,8 @@ body {
 }
 
 nav {
-  background: #4285f4;
+  /* background: #4285f4; */
+  background-color: #022cff;
   height: 80px;
   width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -246,13 +247,13 @@ section {
 }
 
 .learning-section h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .learning-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
   padding: 0 10px;
@@ -314,13 +315,14 @@ section {
 .career-section {
   text-align: center;
   padding: 20px;
-  background-color: #4260F4;
+  /* background: #4285f4; */
+  background-color: lightgray;
 }
 
 .career-section h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
-  color: white;
+
 }
 
 .career-cards {
@@ -335,7 +337,9 @@ section {
   /* Takes up 30% of the row, allows 3 per row on large screens */
   min-width: 200px;
   /* Ensures a minimum size for smaller screens */
-  background-color: #F4B142;
+  /* background-color: #022cff; */
+  background: #4285f4;
+  
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -359,8 +363,8 @@ section {
 }
 
 .career-card p {
-  font-size: 18px;
-  color: #333;
+  font-size: 24px;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -391,7 +395,7 @@ section {
 
 .photogrid-section-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   margin: 20px 0;
 }
 
