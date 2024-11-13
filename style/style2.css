@@ -69,7 +69,7 @@
   /* Stack image and details vertically */
   align-items: center;
   /* Center image and details */
-  width: 100%;
+   width: 100%;
   margin-top: 1rem;
 }
 
@@ -98,103 +98,40 @@
 
 /* Teacher Image */
 .teacher-img {
-  width: 120px;
-  /* Size of the image */
+  width: 120px; /* Size of the image */
   height: 120px;
-  border-radius: 50%;
-  /* Circular crop */
+  border-radius: 50%; /* Circular crop */
   object-fit: cover;
-  margin-bottom: 1rem;
-  /* Add space below image */
+  margin-bottom: 1rem; /* Add space below image */
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
-    flex: 1 1 100%;
-    max-width: 90%;
+      flex: 1 1 100%;
+      max-width: 90%;
   }
 }
 
-/* footer design */
-
+/* Footer Styling */
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  /* Tambahkan gap untuk jarak antar kolom */
-  margin-bottom: 20px;
-}
-
-.footer-section {
-  flex: 1;
-  padding: 0 20px;
-  min-width: 200px;
-  /* Menetapkan lebar minimum untuk menjaga tata letak */
-}
-
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 1.125rem;
-  /* Font responsive */
-  font-weight: bold;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  font-size: 1rem;
-}
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
+  background-color: #042aff;
+  color: #ffffff;
+  padding: 2rem 1rem;
   text-align: center;
-  font-size: 0.875rem;
-  border-top: 1px solid #444;
-  padding-top: 10px;
-  margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    /* Untuk rata tengah pada layar kecil */
-  }
-
-  .footer-section {
-    padding: 10px 0;
-  }
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
-  .footer {
-    padding: 20px 10px;
-  }
+.footer p,
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
-  .footer-section h4 {
-    font-size: 1rem;
-  }
-
-  .footer-section p,
-  .footer-section a,
-  .footer-bottom {
-    font-size: 0.875rem;
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
