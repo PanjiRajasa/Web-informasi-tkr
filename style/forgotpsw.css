@@ -1,0 +1,13 @@
+.title-untuk-reset-psw {
+  text-align: center;
+  font-weight: bold;
+}
+
+.verf-input-container {
+  display: flex;
+  gap: 8px;
+}
+
+.div-kirim-text {
+  margin-top: 15px;
+}

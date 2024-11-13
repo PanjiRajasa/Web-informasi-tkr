@@ -215,9 +215,7 @@
         </tbody>
       </table>
 
-      <h1 class="table-title">
-        Data Siswa Teknik Kendaraan Ringan XII TKRO 2
-      </h1>
+      <h1 class="table-title">Data Siswa Teknik Kendaraan Ringan XII TKRO 2</h1>
       <table border="1" id="XII_TKRO_2">
         <thead>
           <tr>
@@ -385,9 +383,7 @@
         </tbody>
       </table>
 
-      <h1 class="table-title">
-        Data Siswa Teknik Kendaraan Ringan XII TKRO 3
-      </h1>
+      <h1 class="table-title">Data Siswa Teknik Kendaraan Ringan XII TKRO 3</h1>
       <table border="1" id="XII_TKRO_3">
         <thead>
           <tr>
@@ -582,13 +578,14 @@
           <p>I Putu Rangga Aditya Nandhana</p>
         </div>
         <div class="footer-section">
-          <h4>Tentang Kami</h4>
-          <p><a href="#">Cerita Kami</a></p>
-          <p><a href="#">Visi dan Misi</a></p>
+          <h4>Alamat</h4>
+          <p>Jalan HOS Cokroaminoto No. 84 Denpasar</p>
         </div>
         <div class="footer-section">
           <h4>Kontak Kami</h4>
-          <p><a href="mailto:someone@example.com">Email Kami</a></p>
+          <p><a href="mailto:igustipanjirajasa@gmail.com">igustipanjirajasa@gmail.com</a></p>
+          <p><a href="mailto:lioneljonathan038@gmail.com">lioneljonathan038@gmail.com</a></p>
+          <p><a href="mailto:ranggaadityapro23@gmail.com">ranggaadityapro23@gmail.com</a></p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -598,5 +595,21 @@
         </p>
       </div>
     </footer>
+
+    <!-- Cara dibawah yang berhasil -->
+    <script>
+      // Cek status login saat halaman dimuat
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        // Jika belum login, redirect ke halaman login
+        window.location.href = "index.html";
+      }
+
+      function logoutUser() {
+        // Hapus status login dari localStorage
+        localStorage.removeItem("isLoggedIn");
+        // Redirect ke halaman login
+        window.location.href = "index.html";
+      }
+    </script>
   </body>
 </html>

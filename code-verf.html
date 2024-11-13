@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Verifikasi Kode</title>
     <!-- link css -->
+    <link rel="stylesheet" href="style/forgotpsw.css" />
     <link rel="stylesheet" href="style/login.css" />
   </head>
   <body>
@@ -14,12 +15,12 @@
 
     <form id="loginForm" action="new-psw.html">
       <div class="container">
-        <div style="text-align: center; font-weight: bold">
+        <div class="title-untuk-reset-psw">
           <label>Masukkan Kode Verifikasi yang Telah Dikirimkan </label>
         </div>
       </div>
 
-      <div class="verf-input-container" style="display: flex; gap: 8px">
+      <div class="verf-input-container">
         <input
           type="text"
           maxlength="1"
@@ -69,24 +70,6 @@
     </form>
     <br />
 
-    <script>
-      const inputBoxes = document.querySelectorAll(".input-box");
-
-      inputBoxes.forEach((input, index) => {
-        input.addEventListener("input", () => {
-          if (input.value.length === 1) {
-            if (index < inputBoxes.length - 1) {
-              inputBoxes[index + 1].focus();
-            }
-          } else if (input.value.length === 0) {
-            // Check if input is empty
-            if (index > 0) {
-              // If not the first input box
-              inputBoxes[index - 1].focus();
-            }
-          }
-        });
-      });
-    </script>
+    <script src="script/script.js"></script>
   </body>
 </html>
