@@ -400,7 +400,10 @@ section {
 .photogrid-section-title {
   text-align: center;
   font-size: 30px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
+  padding: 8px 0 0 0;
+  background-color: #AAC0AA;
+  color: white;
 }
 
 .row {
@@ -408,7 +411,7 @@ section {
   flex-wrap: wrap;
   background-color: #AAC0AA;
   padding: 12px;
-  margin: 16px 0px;
+  /* margin: 16px 0; */
 }
 
 /* Create four equal columns that sits next to each other */
