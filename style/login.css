@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
     font-size: 1rem;
     background-image: url(/image/image_tkr/orang_kerja2.jpg);
