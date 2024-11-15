@@ -14,7 +14,7 @@
       <img src="image/logo/logo_skensa.png" alt="Logo" />
     </div>
 
-    <form id="loginForm" action="homepage.html" onsubmit="loginUser(event)">
+    <form id="loginForm" action="homepage.html">
       <div class="container">
         <label for="email"><b>Email</b></label>
         <input type="email" placeholder="Enter Email" name="email" required />
@@ -43,18 +43,11 @@
     </form>
     <br>
 
-    <!-- Tidak tau kenapa error pakai yang dibawah -->
-    <!-- <script src="script/script.js"></script> -->
 
-    <!-- Cara dibawah yang berhasil -->
-    <script>
-      function loginUser(event) {
-        event.preventDefault(); // Cegah pengiriman form default
-        // Simpan status login di localStorage
-        localStorage.setItem("isLoggedIn", "true");
-        // Redirect ke halaman homepage
-        window.location.href = "homepage.html";
-      }
+    <!-- Menyertakan file JavaScript eksternal untuk mengelola logika login -->
+    <script type="text/javascript" src="script/login.js"></script>
+
+
     </script>
   </body>
 </html>

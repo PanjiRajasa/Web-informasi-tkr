@@ -264,19 +264,9 @@
     <!-- <script src="script/script.js"></script> -->
 
     <!-- Cara dibawah yang berhasil -->
-    <script>
-      // Cek status login saat halaman dimuat
-      if (localStorage.getItem("isLoggedIn") !== "true") {
-        // Jika belum login, redirect ke halaman login
-        window.location.href = "index.html";
-      }
+    <script src="script/script.js" type="text/javascript">
+      // supaya ga bisa balik lagi ke homepage tanpa login/register terlebih dahulu
 
-      function logoutUser() {
-        // Hapus status login dari localStorage
-        localStorage.removeItem("isLoggedIn");
-        // Redirect ke halaman login
-        window.location.href = "index.html";
-      }
     </script>
   </body>
 </html>

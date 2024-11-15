@@ -41,3 +41,18 @@ inputBoxes.forEach((input, index) => {
     }
   });
 });
+
+
+// supaya ga bisa balik lagi ke homepage tanpa login/register terlebih dahulu
+function goBack() {
+
+  //if history ada (lebih dari 1) maka akan kembali ke halaman sebelumnya, misal user loginnya lewat login.html
+  if(window.history.length > 1) {
+    window.history.back();   
+  } else {
+    //misal user masuknya langsung di project.html/ga ada history dari page apa dia sebelumnya
+    window.location.href = "index.html";
+  }
+  
+
+}
