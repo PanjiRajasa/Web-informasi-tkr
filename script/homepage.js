@@ -1,6 +1,6 @@
 function logout() {
     // Kirim permintaan ke server untuk logout
-    fetch() // Ganti dengan endpoint logout yang sesuai
+    fetch("/logout.php") // Ganti dengan endpoint logout yang sesuai
         .then(response => {
             // Ganti halaman saat ini dengan halaman login dan hapus seluruh riwayat
             window.location.replace("/index.html");
