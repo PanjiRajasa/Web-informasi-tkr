@@ -1,4 +1,4 @@
-// Untuk login
+
 
 /* Only for reference */
 
@@ -24,35 +24,3 @@
 //     window.location.href = 'index.html';
 // }
 
-const inputBoxes = document.querySelectorAll(".input-box");
-
-inputBoxes.forEach((input, index) => {
-  input.addEventListener("input", () => {
-    if (input.value.length === 1) {
-      if (index < inputBoxes.length - 1) {
-        inputBoxes[index + 1].focus();
-      }
-    } else if (input.value.length === 0) {
-      // Check if input is empty
-      if (index > 0) {
-        // If not the first input box
-        inputBoxes[index - 1].focus();
-      }
-    }
-  });
-});
-
-
-// supaya ga bisa balik lagi ke homepage tanpa login/register terlebih dahulu
-function goBack() {
-
-  //if history ada (lebih dari 1) maka akan kembali ke halaman sebelumnya, misal user loginnya lewat login.html
-  if(window.history.length > 1) {
-    window.history.back();   
-  } else {
-    //misal user masuknya langsung di project.html/ga ada history dari page apa dia sebelumnya
-    window.location.href = "index.html";
-  }
-  
-
-}
